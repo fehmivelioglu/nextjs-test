@@ -1,5 +1,10 @@
-import Header from '@/components/Header'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Hakkımızda",
+    description: "Hakkımızda sayfası",
+}
 
 export default function About(){
     return (
