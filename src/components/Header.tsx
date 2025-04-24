@@ -12,6 +12,7 @@ export default function Header(){
                     <Link href={"/"} className={`text-2xl font-bold text-gray-800 ${pathname === "/" ? "underline" : ""}`}>Home</Link>
                     <Link href={"/about"} className={`text-2xl font-bold text-gray-800 ${pathname === "/about" ? "underline" : ""}`}>About</Link>
                     <Link href={"/contact"} className={`text-2xl font-bold text-gray-800 ${pathname === "/contact" ? "underline" : ""}`}>Contact</Link>
+                    <Link href={{pathname:"/about",query:{name:"John"}}} className={`text-2xl font-bold text-gray-800 ${pathname === "/about" ? "underline" : ""}`}>About</Link>
                 </div>
                 <button 
                     onClick={() => router.push("/about")}
